@@ -10,7 +10,7 @@
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "deploy:page": "./deploy-page.sh"
+    "deploy:page": "sh ./deploy-page.sh"
   },
   "dependencies": {
     "@hello-charles/json-logic": "^1.0.0",
