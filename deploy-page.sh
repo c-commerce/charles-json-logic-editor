@@ -5,11 +5,13 @@ set -e
 NODE_ENV=production npm run build:page
 # # navigate into the build output directory
 cd dist
-# # if you are deploying to a custom domain
-# # echo 'www.example.com' > CNAME
+
 git init
 git add -A
+git branch -M main
 git commit -m 'deploy'
 
-git push -f git@github.com:c-commerce/charles-json-logic-editor.git main:gh-pages
+git branch -M gh-pages
+
+git push -f git@github.com:c-commerce/charles-json-logic-editor.git gh-pages
 cd -
