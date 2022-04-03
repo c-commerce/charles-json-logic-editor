@@ -33,7 +33,7 @@ import VSelect from 'vue-select'
 import jspoLogic from '@hello-charles/json-logic'
 
 export default defineComponent({
-  name: 'App',
+  name: 'JsonLogicEditor',
   components: {
     VSelect
   },
